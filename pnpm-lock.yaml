@@ -8,6 +8,9 @@ dependencies:
   '@logseq/libs':
     specifier: ^0.0.17
     version: 0.0.17
+  date-fns:
+    specifier: ^3.0.6
+    version: 3.0.6
   logseq-l10n:
     specifier: ^0.2.0
     version: 0.2.0(@logseq/libs@0.0.17)
@@ -2032,6 +2035,10 @@ packages:
     transitivePeerDependencies:
       - typescript
     dev: true
+
+  /date-fns@3.0.6:
+    resolution: {integrity: sha512-W+G99rycpKMMF2/YD064b2lE7jJGUe+EjOES7Q8BIGY8sbNdbgcs9XFTZwvzc9Jx1f3k7LB7gZaZa7f8Agzljg==}
+    dev: false
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
