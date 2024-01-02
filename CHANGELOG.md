@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.0.0...v1.1.0) (2024-1-2)
+
+
+### Features
+
+* Set icon ([f3d18b2](https://github.com/YU000jp/logseq-plugin-single-journal/commit/f3d18b2917d463e620fb8814911e528275f10833))
+
 # 1.0.0 (2024-1-2)
 
 
