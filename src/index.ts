@@ -60,6 +60,7 @@ const addCancelExcludeButton = () => {
     const buttonEle = document.createElement('button')
     buttonEle.id = "cancel-exclude"
     buttonEle.innerText = "( ➖ " + t("Temporarily disable: Exclude except today") + ")"
+    buttonEle.title = t("- Single Journal plugin -")
     buttonEle.classList.add('w-full', 'p-4')
     diaryEle.insertAdjacentElement('afterend', buttonEle)
 
@@ -69,7 +70,7 @@ const addCancelExcludeButton = () => {
       buttonEle.remove()
       removeProvideStyle(keyCSSExclude)
       logseq.updateSettings({ flagExcludeExceptToday: true }) //一時的に除外を解除するフラグを立てる
-      logseq.UI.showMsg(t("Click to cancel the exclusion"), "info", { timeout: 2000 })
+      logseq.UI.showMsg(t("Temporarily cancel exclusion."), "info", { timeout: 2400 })
     })
   }
 }
