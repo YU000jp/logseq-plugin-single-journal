@@ -15,10 +15,12 @@
 
 ## Options
 
-1. Display only today's diary instead of multiple diaries in journals.
+1. Display only today's diary instead of multiple diaries in journals. **default: enable**
    > Temporary cancellation can be done from the button under the content.
-1. Redirect to today's diary when opening journals.
+1. Redirect to today's diary when opening journals. **default: disable**
    > Open as single page. However, there is a time lag for redirection.
+
+Switch in plugin settings
 
 ---
 
@@ -29,6 +31,9 @@
 - Press [`---`] on the top right toolbar to open [`Plugins`]. Select marketplace. Type `Single` in the search field, select it from the search results and install
 
 ### Usage
+
+- Enable either setting and open journals.
+  > This plugin only works when you open journals.
 
 ---
 
