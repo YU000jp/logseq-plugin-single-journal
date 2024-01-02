@@ -1,0 +1,9 @@
+{
+  "Display before today (only this time)": "Mostra prima di oggi (solo questa volta)",
+  "- Single Journal plugin -": "- Plugin per diario singolo -",
+  "Temporarily cancel exclusion.": "Rimuovere temporaneamente l'esclusione.",
+  "Exclude everything except today's diary (default: true)": "Escludi tutto tranne il diario di oggi (predefinito: true)",
+  "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Se vuoi vedere solo il diario di oggi, abilita questa opzione. Nel diario, puoi anche effettuare una cancellazione temporanea facendo clic sul pulsante sotto il contenuto.",
+  "Redirect to today's diary when opening journals (default: false)": "Reindirizzamento al diario di oggi all'apertura di un diario (default: false)",
+  "Open as single page. However, there is a time lag for redirection.": "Si apre come una singola pagina. Tuttavia, c'è un ritardo temporale per i reindirizzamenti."
+}

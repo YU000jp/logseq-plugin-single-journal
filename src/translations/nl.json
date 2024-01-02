@@ -1,0 +1,9 @@
+{
+  "Display before today (only this time)": "Toon voor vandaag (alleen deze keer)",
+  "- Single Journal plugin -": "- Plug-in voor één journaal -",
+  "Temporarily cancel exclusion.": "Verwijder de uitsluiting tijdelijk.",
+  "Exclude everything except today's diary (default: true)": "Sluit alles behalve het dagboek van vandaag uit (standaard: waar)",
+  "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Als je alleen het dagboek van vandaag wilt zien, schakel dan deze optie in. In het dagboek kun je ook een tijdelijke opzegging doen door op de knop onder de inhoud te klikken.",
+  "Redirect to today's diary when opening journals (default: false)": "Doorverwijzen naar het dagboek van vandaag bij het openen van een dagboek (standaard: false)",
+  "Open as single page. However, there is a time lag for redirection.": "Het wordt geopend als een enkele pagina. Er is echter een vertraging voor omleidingen."
+}

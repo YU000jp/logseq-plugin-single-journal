@@ -1,0 +1,9 @@
+{
+  "Display before today (only this time)": "Bugünden önce göster (yalnızca bu sefer)",
+  "- Single Journal plugin -": "- Tek Dergi Eklentisi -",
+  "Temporarily cancel exclusion.": "İstisnayı geçici olarak kaldırın.",
+  "Exclude everything except today's diary (default: true)": "Bugünün günlüğü dışındaki tüm günlükleri hariç tut (varsayılan: true)",
+  "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Yalnızca bugünün günlüğünü görmek istiyorsanız, bu seçeneği etkinleştirin. Dergide, içeriğin altındaki butona tıklayarak da geçici iptal işlemi yapabilirsiniz.",
+  "Redirect to today's diary when opening journals (default: false)": "Günlük açarken bugünün günlüğüne yönlendir (varsayılan: false)",
+  "Open as single page. However, there is a time lag for redirection.": "Tek sayfa olarak açılır. Ancak, yönlendirmeler için bir zaman gecikmesi vardır."
+}

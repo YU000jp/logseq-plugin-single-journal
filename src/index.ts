@@ -1,17 +1,38 @@
-import '@logseq/libs' //https://plugins-doc.logseq.com/
+import '@logseq/libs'; //https://plugins-doc.logseq.com/
 import { LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user'
-import { setup as l10nSetup, t } from "logseq-l10n" //https://github.com/sethyuan/logseq-l10n
-import CSSExclude from './exclude.css?inline' // CSS
-import { removeProvideStyle } from './lib'
+import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
+import CSSExclude from './exclude.css?inline'; // CSS
+import { openPageTodayDiary, removeProvideStyle } from './lib'
 import { settingsTemplate } from './settings'
+import af from "./translations/af.json"
+import de from "./translations/de.json"
+import es from "./translations/es.json"
+import fr from "./translations/fr.json"
+import id from "./translations/id.json"
+import it from "./translations/it.json"
 import ja from "./translations/ja.json"
-import { openPageTodayDiary } from './lib'
+import ko from "./translations/ko.json"
+import nbNO from "./translations/nb-NO.json"
+import nl from "./translations/nl.json"
+import pl from "./translations/pl.json"
+import ptBR from "./translations/pt-BR.json"
+import ptPT from "./translations/pt-PT.json"
+import ru from "./translations/ru.json"
+import sk from "./translations/sk.json"
+import tr from "./translations/tr.json"
+import uk from "./translations/uk.json"
+import zhCN from "./translations/zh-CN.json"
+import zhHant from "./translations/zh-Hant.json"
 const keyCSSExclude = 'exclude' // CSS
 
 /* main */
 const main = async () => {
 
-  await l10nSetup({ builtinTranslations: { ja } })
+  await l10nSetup({
+    builtinTranslations: {//Full translations
+      ja, af, de, es, fr, id, it, ko, "nb-NO": nbNO, nl, pl, "pt-BR": ptBR, "pt-PT": ptPT, ru, sk, tr, uk, "zh-CN": zhCN, "zh-Hant": zhHant
+    }
+  })
 
   /* user settings */
   logseq.useSettingsSchema(settingsTemplate())
@@ -53,13 +74,13 @@ const provideStyleExcludeExceptToday = () =>
 
 
 const addCancelExcludeButton = () => {
-  if(parent.document.getElementById("cancel-exclude")) return //すでにボタンがある場合は処理しない
+  if (parent.document.getElementById("cancel-exclude")) return //すでにボタンがある場合は処理しない
   // 除外を解除するボタンを追加する
   const diaryEle = parent.document.querySelector('body[data-page="home"]>div#root>div>main div#main-content-container div#journals div.journal-item.content') as HTMLDivElement | null
   if (diaryEle) {
     const buttonEle = document.createElement('button')
     buttonEle.id = "cancel-exclude"
-    buttonEle.innerText = "( ➖ " + t("Temporarily disable: Exclude except today") + ")"
+    buttonEle.innerText = "( ➖ " + t("Display before today (only this time)") + ")"
     buttonEle.title = t("- Single Journal plugin -")
     buttonEle.classList.add('w-full', 'p-4')
     diaryEle.insertAdjacentElement('afterend', buttonEle)

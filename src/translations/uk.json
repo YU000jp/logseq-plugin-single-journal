@@ -1,0 +1,9 @@
+{
+  "Display before today (only this time)": "Показати до сьогоднішнього дня (тільки цього разу)",
+  "- Single Journal plugin -": "- Плагін єдиного журналу -",
+  "Temporarily cancel exclusion.": "Тимчасово видаліть виключення.",
+  "Exclude everything except today's diary (default: true)": "Виключити всі, крім сьогоднішнього щоденника (за замовчуванням: true)",
+  "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Якщо ви хочете бачити лише сьогоднішній щоденник, увімкніть цю опцію. У журналі ви також можете зробити тимчасове скасування, натиснувши кнопку під вмістом.",
+  "Redirect to today's diary when opening journals (default: false)": "Перенаправлення на сьогоднішній щоденник при відкритті журналу (за замовчуванням: false)",
+  "Open as single page. However, there is a time lag for redirection.": "Він відкривається як окрема сторінка. Однак існує часовий лаг для редиректів."
+}

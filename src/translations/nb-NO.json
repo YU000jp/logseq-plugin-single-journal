@@ -1,0 +1,9 @@
+{
+  "Display before today (only this time)": "Vis før i dag (bare denne gangen)",
+  "- Single Journal plugin -": "- Single Journal Plugin -",
+  "Temporarily cancel exclusion.": "Fjern ekskluderingen midlertidig.",
+  "Exclude everything except today's diary (default: true)": "Ekskluder alle unntatt dagens dagbok (standard: sann)",
+  "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Hvis du bare vil se dagens dagbok, aktiverer du dette alternativet. I journalen kan du også foreta en midlertidig kansellering ved å klikke på knappen under innholdet.",
+  "Redirect to today's diary when opening journals (default: false)": "Omdiriger til dagens dagbok når du åpner en journal (standard: usann)",
+  "Open as single page. However, there is a time lag for redirection.": "Den åpnes som en enkelt side. Det er imidlertid et tidsetterslep for omdirigeringer."
+}
