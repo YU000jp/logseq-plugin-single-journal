@@ -44,7 +44,7 @@ Switch in plugin settings
 
 ## Prior art & Credit
 
-Icon > [icooon-mono.com](https://icooon-mono.com/)
+Icon > [icooon-mono.com](https://icooon-mono.com/00252-%e3%83%8f%e3%82%b5%e3%83%9f%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3/)
 
 Author > [@YU000jp](https://github.com/YU000jp)
 
