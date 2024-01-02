@@ -53,10 +53,12 @@ const provideStyleExcludeExceptToday = () =>
 
 
 const addCancelExcludeButton = () => {
+  if(parent.document.getElementById("cancel-exclude")) return //すでにボタンがある場合は処理しない
   // 除外を解除するボタンを追加する
   const diaryEle = parent.document.querySelector('body[data-page="home"]>div#root>div>main div#main-content-container div#journals div.journal-item.content') as HTMLDivElement | null
   if (diaryEle) {
     const buttonEle = document.createElement('button')
+    buttonEle.id = "cancel-exclude"
     buttonEle.innerText = "( ➖ " + t("Temporarily disable: Exclude except today") + ")"
     buttonEle.classList.add('w-full', 'p-4')
     diaryEle.insertAdjacentElement('afterend', buttonEle)
@@ -64,7 +66,7 @@ const addCancelExcludeButton = () => {
     buttonEle.addEventListener('click', (event) => {
       //ボタン処理を中断する
       event.preventDefault()
-      buttonEle.innerHTML = ""
+      buttonEle.remove()
       removeProvideStyle(keyCSSExclude)
       logseq.updateSettings({ flagExcludeExceptToday: true }) //一時的に除外を解除するフラグを立てる
       logseq.UI.showMsg(t("Click to cancel the exclusion"), "info", { timeout: 2000 })

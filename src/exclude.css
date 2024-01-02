@@ -1,7 +1,6 @@
 body[data-page="home"]>div#root>div>main div#main-content-container div#journals {
 
     & button.w-full.p-4+div.journal-item.content,
-    & button.w-full.p-4+button.w-full.p-4,
     & div.journal-item.content+div.journal-item.content {
         display: none;
     }
