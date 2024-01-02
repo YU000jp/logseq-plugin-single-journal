@@ -2,7 +2,7 @@
   "Display before today (only this time)": "今日より前を表示する (今回のみ)",
   "- Single Journal plugin -": "- Single Journal プラグイン -",
   "Temporarily cancel exclusion.": "除外を一時的に解除します。",
-  "Exclude everything except today's diary (default: true)": "今日の日記以外を除外する (デフォルト: true)",
+  "Exclude everything except today's diary (default: true)": "今日より前の日記を除外する (デフォルト: true)",
   "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "今日の日記のみを表示する場合は、このオプションを有効にします。日誌で、コンテンツの下のボタンから一時的なキャンセルもできます。",
   "Redirect to today's diary when opening journals (default: false)": "日誌を開くときに今日の日記にリダイレクトする (デフォルト: false)",
   "Open as single page. However, there is a time lag for redirection.": "シングルページとして開きます。ただし、リダイレクトにはタイムラグがあります。"

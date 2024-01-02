@@ -15,6 +15,11 @@
 
 ## Options
 
+1. Display only today's diary instead of multiple diaries in journals.
+   > Temporary cancellation can be done from the button under the content.
+1. Redirect to today's diary when opening journals.
+   > Open as single page. However, there is a time lag for redirection.
+
 ---
 
 ## Getting Started
