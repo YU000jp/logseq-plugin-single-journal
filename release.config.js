@@ -1,5 +1,5 @@
 
-var PLUGIN_NAME = 'logseq-plugin-template-typescript'
+var PLUGIN_NAME = 'logseq-plugin-single-journal'
 
 module.exports = {
     branches: ['main'],

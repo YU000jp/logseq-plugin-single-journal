@@ -1,12 +1,12 @@
 {
-    "name": "logseq-plugin-template-typescript",
-    "description": "",
-    "repository": "https://github.com/YU000jp/logseq-plugin-template-typescript.git",
+    "name": "logseq-plugin-single-journal",
+    "description": "Displays today's diary instead of journals.",
+    "repository": "https://github.com/YU000jp/logseq-plugin-single-journal.git",
     "author": "YU000jp",
     "license": "MIT",
     "logseq": {
-        "id": "logseq-plugin-template-typescript",
-        "title": "Template TypeScript",
+        "id": "logseq-plugin-single-journal",
+        "title": "Single Journal",
         "icon": "./icon.svg",
         "main": "./dist/index.html"
     },
