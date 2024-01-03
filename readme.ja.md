@@ -13,7 +13,7 @@
 1. 日誌で複数の日記ではなく、今日の日記のみを表示します。 **デフォルト: 有効**
    > 一時的にキャンセルするには、コンテンツの下のボタンから行えます。
 
-   ![singleJournalJa](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/e90069da-5618-46c1-8d56-5e28c0756423)
+   ![singleJournalJa](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/28cbb862-c749-4a12-8457-e4b3cd707882)
 
 1. 日誌を開く際に今日の日記にリダイレクトします。 **デフォルト: 無効**
    > シングルページで開きます。ただし、リダイレクトには時間の遅れがあります。
