@@ -2,13 +2,9 @@
 
 [English](https://github.com/YU000jp/logseq-plugin-single-journal) / [日本語](https://github.com/YU000jp/logseq-plugin-single-journal/blob/main/readme.ja.md)
 
-- まだ公開されていません 👷🚧
-
-> [リリース](https://github.com/YU000jp/logseq-plugin-single-journal/releases) 情報は右側にあります。デベロッパーモードでファイルをロードします。
-
 [![最新リリースバージョン](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-single-journal)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
 [![ダウンロード数](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-single-journal/total.svg)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
-<!-- 2024年に公開予定 -->
+2024/01/03に公開
 
 ---
 
@@ -25,7 +21,7 @@
 
 ## はじめに
 
-### Logseq マーケットプレイスからインストール（準備中👷🚧）
+### Logseq マーケットプレイスからインストール
 
 - 上部の右ツールバーで [`---`] を押して [`Plugins`] を開きます。マーケットプレイスを選択します。検索フィールドに `Single` と入力し、検索結果から選択してインストールします。
 

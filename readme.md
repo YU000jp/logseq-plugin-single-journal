@@ -2,13 +2,9 @@
 
 [English](https://github.com/YU000jp/logseq-plugin-single-journal) / [日本語](https://github.com/YU000jp/logseq-plugin-single-journal/blob/main/readme.ja.md)
 
-- Not published yet 👷🚧
-
-> [Release](https://github.com/YU000jp/logseq-plugin-single-journal/releases) information is on the right. Load files at developer mode.
-
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-single-journal)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-single-journal/total.svg)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
-<!-- Published 2023 -->
+Published 20240103
 
 ## Options
 
@@ -26,7 +22,7 @@ Switch in plugin settings
 
 ## Getting Started
 
-### Install from Logseq Marketplace (Coming👷🚧)
+### Install from Logseq Marketplace
 
 - Press [`---`] on the top right toolbar to open [`Plugins`]. Select marketplace. Type `Single` in the search field, select it from the search results and install
 
