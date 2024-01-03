@@ -80,7 +80,7 @@ const addCancelExcludeButton = () => {
   if (diaryEle) {
     const buttonEle = document.createElement('button')
     buttonEle.id = "cancel-exclude"
-    buttonEle.innerText = "( ➖ " + t("Display before today (only this time)") + ")"
+    buttonEle.innerText = "( ➖ " + t("Display before today") + ")"
     buttonEle.title = t("- Single Journal plugin -")
     buttonEle.classList.add('w-full', 'p-4')
     diaryEle.insertAdjacentElement('afterend', buttonEle)

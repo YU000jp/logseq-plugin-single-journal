@@ -1,8 +1,8 @@
 {
-  "Display before today (only this time)": "今天之前显示（仅限此时间）",
+  "Display before today": "今天之前显示",
   "- Single Journal plugin -": "- 单一期刊插件 -",
   "Temporarily cancel exclusion.": "暂时删除排除项。",
-  "Exclude everything except today's diary (default: true)": "排除除今天日记之外的所有日记（默认值：true）",
+  "Exclude everything except today's diary (default: true)": "排除早于今天的日记（默认值：true）",
   "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "如果您只想查看今天的日记，请启用此选项。 在日记中，您还可以通过单击内容下方的按钮进行临时取消。",
   "Redirect to today's diary when opening journals (default: false)": "打开日记时重定向至今日日记（默认值：false）",
   "Open as single page. However, there is a time lag for redirection.": "它以单个页面的形式打开。 但是，重定向存在时间滞后。"

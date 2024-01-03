@@ -1,8 +1,8 @@
 {
-  "Display before today (only this time)": "오늘 전에 표시(이번에만 해당)",
+  "Display before today": "오늘 전에 표시",
   "- Single Journal plugin -": "- 단일 저널 플러그인 -",
   "Temporarily cancel exclusion.": "제외를 일시적으로 제거합니다.",
-  "Exclude everything except today's diary (default: true)": "오늘의 일기를 제외한 모든 일기 제외 (기본값: true)",
+  "Exclude everything except today's diary (default: true)": "오늘보다 오래된 일기 제외 (기본값: true)",
   "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "오늘의 일기만 보려면 이 옵션을 활성화하세요. 저널에서 콘텐츠 아래의 버튼을 클릭하여 일시 취소를 할 수도 있습니다.",
   "Redirect to today's diary when opening journals (default: false)": "저널을 열 때 오늘의 다이어리로 리디렉션 (기본값: false)",
   "Open as single page. However, there is a time lag for redirection.": "단일 페이지로 열립니다. 그러나 리디렉션에는 시간 지연이 있습니다."

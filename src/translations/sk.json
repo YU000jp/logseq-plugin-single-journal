@@ -1,8 +1,8 @@
 {
-  "Display before today (only this time)": "Zobraziť do dnešného dňa (iba tentoraz)",
+  "Display before today": "Zobraziť pred dnešným dňom",
   "- Single Journal plugin -": "- Doplnok jedného denníka -",
   "Temporarily cancel exclusion.": "Dočasne odstráňte vylúčenie.",
-  "Exclude everything except today's diary (default: true)": "Vylúčiť všetky okrem dnešného denníka (predvolené: true)",
+  "Exclude everything except today's diary (default: true)": "Vylúčenie denníkov starších ako dnes (predvolené: true)",
   "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Ak chcete zobraziť len dnešný denník, povoľte túto možnosť. V denníku môžete tiež vykonať dočasné zrušenie kliknutím na tlačidlo pod obsahom.",
   "Redirect to today's diary when opening journals (default: false)": "Presmerovanie na dnešný denník pri otváraní denníka (predvolené: false)",
   "Open as single page. However, there is a time lag for redirection.": "Otvorí sa ako jedna strana. Pri presmerovaniach však existuje časové oneskorenie."

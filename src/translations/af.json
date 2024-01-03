@@ -1,8 +1,8 @@
 {
-  "Display before today (only this time)": "Wys voor vandag (slegs hierdie keer)",
+  "Display before today": "Wys voor vandag",
   "- Single Journal plugin -": "- Enkeljoernaal-inprop -",
   "Temporarily cancel exclusion.": "Verwyder die uitsluiting tydelik.",
-  "Exclude everything except today's diary (default: true)": "Sluit alles behalwe vandag se dagboek uit (standaard: waar)",
+  "Exclude everything except today's diary (default: true)": "Sluit dagboeke ouer as vandag uit (standaard: waar)",
   "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "As jy net vandag se dagboek wil sien, aktiveer hierdie opsie. In die joernaal kan jy ook 'n tydelike kansellasie maak deur op die knoppie onder die inhoud te klik.",
   "Redirect to today's diary when opening journals (default: false)": "Herlei na vandag se dagboek wanneer u 'n joernaal oopmaak (standaard: onwaar)",
   "Open as single page. However, there is a time lag for redirection.": "Dit word as 'n enkele bladsy oopgemaak. Daar is egter 'n tydsverloop vir aansture."

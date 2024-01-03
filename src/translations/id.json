@@ -1,8 +1,8 @@
 {
-  "Display before today (only this time)": "Tampilkan sebelum hari ini (hanya kali ini)",
+  "Display before today": "Tampilkan sebelum hari ini",
   "- Single Journal plugin -": "- Plugin Jurnal Tunggal -",
   "Temporarily cancel exclusion.": "Hapus pengecualian untuk sementara.",
-  "Exclude everything except today's diary (default: true)": "Kecualikan semua kecuali buku harian hari ini (default: true)",
+  "Exclude everything except today's diary (default: true)": "Kecualikan buku harian yang lebih lama dari hari ini (default: true)",
   "If you want to display only today's diary, enable this option. Temporary cancellation can be done from the button under the content.": "Jika Anda hanya ingin melihat buku harian hari ini, aktifkan opsi ini. Dalam jurnal, Anda juga dapat melakukan pembatalan sementara dengan mengklik tombol di bawah konten.",
   "Redirect to today's diary when opening journals (default: false)": "Alihkan ke buku harian hari ini saat membuka jurnal (default: false)",
   "Open as single page. However, there is a time lag for redirection.": "Ini terbuka sebagai satu halaman. Namun, ada jeda waktu untuk pengalihan."

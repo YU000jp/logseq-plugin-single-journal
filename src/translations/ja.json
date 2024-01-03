@@ -1,5 +1,5 @@
 {
-  "Display before today (only this time)": "今日より前を表示する (今回のみ)",
+  "Display before today": "今日より前を表示する",
   "- Single Journal plugin -": "- Single Journal プラグイン -",
   "Temporarily cancel exclusion.": "除外を一時的に解除します。",
   "Exclude everything except today's diary (default: true)": "今日より前の日記を除外する (デフォルト: true)",
