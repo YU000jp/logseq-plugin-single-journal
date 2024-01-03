@@ -1,7 +1,7 @@
-import '@logseq/libs'; //https://plugins-doc.logseq.com/
+import '@logseq/libs' //https://plugins-doc.logseq.com/
 import { LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user'
-import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
-import CSSExclude from './exclude.css?inline'; // CSS
+import { setup as l10nSetup, t } from "logseq-l10n" //https://github.com/sethyuan/logseq-l10n
+import CSSExclude from './exclude.css?inline' // CSS
 import { openPageTodayDiary, removeProvideStyle } from './lib'
 import { settingsTemplate } from './settings'
 import af from "./translations/af.json"
@@ -56,8 +56,15 @@ const main = async () => {
   })
 
   //CSSで除外する場合
-  if (logseq.settings!.excludeExceptToday as boolean === true)
+  if (logseq.settings!.excludeExceptToday as boolean === true) {
     provideStyleExcludeExceptToday()
+
+    //初回読み込み時 除外を解除するボタンを追加する
+    setTimeout(() =>
+      addCancelExcludeButton()
+      , 2000)
+  }
+
   logseq.onSettingsChanged(async (newSet: LSPluginBaseInfo['settings'], oldSet: LSPluginBaseInfo['settings']) => {
     if (oldSet.excludeExceptToday !== newSet.excludeExceptToday) {
       if (newSet.excludeExceptToday as boolean === true)
@@ -68,6 +75,7 @@ const main = async () => {
   })
 
 }/* end_main */
+
 
 const provideStyleExcludeExceptToday = () =>
   logseq.provideStyle({ key: keyCSSExclude, style: CSSExclude })
