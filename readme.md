@@ -16,6 +16,9 @@
 
 1. Display only today's diary instead of multiple diaries in journals. **default: enable**
    > Temporary cancellation can be done from the button under the content.
+
+   ![singleJournal](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/00299512-19f0-445e-8f73-467128a3b9c9)
+
 1. Redirect to today's diary when opening journals. **default: disable**
    > Open as single page. However, there is a time lag for redirection.
 
