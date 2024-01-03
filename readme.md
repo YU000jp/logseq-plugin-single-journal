@@ -4,13 +4,9 @@
 
 > [Release](https://github.com/YU000jp/logseq-plugin-single-journal/releases) information is on the right. Load files at developer mode.
 
-> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
-
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-single-journal)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-single-journal/total.svg)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
 <!-- Published 2023 -->
-
----
 
 ## Options
 
@@ -36,6 +32,8 @@ Switch in plugin settings
 
 - Enable either setting and open journals.
   > This plugin only works when you open journals.
+
+> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
 
 ---
 
