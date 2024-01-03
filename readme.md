@@ -1,5 +1,7 @@
 # Logseq Plugin: Single Journal
 
+[English](https://github.com/YU000jp/logseq-plugin-single-journal) / [日本語](https://github.com/YU000jp/logseq-plugin-single-journal/blob/main/readme.ja.md)
+
 - Not published yet 👷🚧
 
 > [Release](https://github.com/YU000jp/logseq-plugin-single-journal/releases) information is on the right. Load files at developer mode.
