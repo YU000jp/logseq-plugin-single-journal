@@ -6,18 +6,17 @@
 
 > [Release](https://github.com/YU000jp/logseq-plugin-single-journal/releases) information is on the right. Load files at developer mode.
 
-> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
-
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-single-journal)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-single-journal/total.svg)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
 <!-- Published 2023 -->
-
----
 
 ## Options
 
 1. Display only today's diary instead of multiple diaries in journals. **default: enable**
    > Temporary cancellation can be done from the button under the content.
+
+   ![singleJournal](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/00299512-19f0-445e-8f73-467128a3b9c9)
+
 1. Redirect to today's diary when opening journals. **default: disable**
    > Open as single page. However, there is a time lag for redirection.
 
@@ -35,6 +34,8 @@ Switch in plugin settings
 
 - Enable either setting and open journals.
   > This plugin only works when you open journals.
+
+> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
 
 ---
 
