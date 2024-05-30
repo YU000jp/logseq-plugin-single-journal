@@ -4,5 +4,8 @@ body[data-page="home"]>div#root>div>main div#main-content-container div#journals
     & div.journal-item.content+div.journal-item.content {
         display: none;
     }
-    
+ 
+    .cp__header-logo, .fade-link {
+        display: none;
+    }
 }
