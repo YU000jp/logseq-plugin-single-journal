@@ -16,6 +16,11 @@ Published 20240103
 1. Redirect to today's diary when opening journals. **default: disable**
    > Open as single page. However, there is a time lag for redirection.
 
+1. Journal navigation with toolbars and shortcuts 🆕
+   > You can filter down to only the items you need. To use and assign the respective shortcuts, find the commands in the keymap.
+
+   ![singleJournalプラグイン ツールバー](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/98636867-858d-4fda-a31a-9e2615dfd1a9)
+
 Switch in plugin settings
 
 ---
