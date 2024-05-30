@@ -10,6 +10,18 @@
 
 * **Add:** Journal navigation with toolbars and shortcuts [#7](https://github.com/YU000jp/logseq-plugin-single-journal/issues/7) ([c9e2c95](https://github.com/YU000jp/logseq-plugin-single-journal/commit/c9e2c951ea021e4230a387a0490de6318fe77399))
 
+# [1.3.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.2.0...v1.3.0) (2024-05-30)
+
+
+### Bug Fixes
+
+* **bug:** Remove the confusing button [#6](https://github.com/YU000jp/logseq-plugin-single-journal/issues/6) ([4ec146a](https://github.com/YU000jp/logseq-plugin-single-journal/commit/4ec146a133e93227430ce81927f2c5db3264e8f5))
+
+
+### Features
+
+* **Add:** Journal navigation with toolbars and shortcuts [#7](https://github.com/YU000jp/logseq-plugin-single-journal/issues/7) ([c9e2c95](https://github.com/YU000jp/logseq-plugin-single-journal/commit/c9e2c951ea021e4230a387a0490de6318fe77399))
+
 # [1.2.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.1.0...v1.2.0) (2024-1-3)
 
 
