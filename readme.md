@@ -21,8 +21,6 @@ Published 20240103
 
    ![singleJournalプラグイン ツールバー](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/98636867-858d-4fda-a31a-9e2615dfd1a9)
 
-Switch in plugin settings
-
 ---
 
 ## Getting Started
