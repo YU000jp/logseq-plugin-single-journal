@@ -23,7 +23,16 @@ import tr from "./translations/tr.json"
 import uk from "./translations/uk.json"
 import zhCN from "./translations/zh-CN.json"
 import zhHant from "./translations/zh-Hant.json"
+import { commandPaletteItems } from './commandPaletteItems'
+import { addToolbarButtons } from './addToolbarButtons'
 const keyCSSExclude = 'exclude' // CSS
+
+let configPreferredDateFormat: string
+export const getConfigPreferredDateFormat = (): string => configPreferredDateFormat
+const getUserConfig = async () => {
+  const { preferredDateFormat } = await logseq.App.getUserConfigs() as { preferredDateFormat: string }
+  configPreferredDateFormat = preferredDateFormat
+}
 
 /* main */
 const main = async () => {
@@ -33,6 +42,8 @@ const main = async () => {
       ja, af, de, es, fr, id, it, ko, "nb-NO": nbNO, nl, pl, "pt-BR": ptBR, "pt-PT": ptPT, ru, sk, tr, uk, "zh-CN": zhCN, "zh-Hant": zhHant
     }
   })
+
+  getUserConfig()
 
   /* user settings */
   logseq.useSettingsSchema(settingsTemplate())
@@ -65,6 +76,15 @@ const main = async () => {
       , 2000)
   }
 
+
+  // ツールバーボタン追加
+  addToolbarButtons()
+
+  // コマンド追加
+  commandPaletteItems()
+
+
+  //設定変更時の処理
   logseq.onSettingsChanged(async (newSet: LSPluginBaseInfo['settings'], oldSet: LSPluginBaseInfo['settings']) => {
     if (oldSet.excludeExceptToday !== newSet.excludeExceptToday) {
       if (newSet.excludeExceptToday as boolean === true)
@@ -75,6 +95,14 @@ const main = async () => {
   })
 
 }/* end_main */
+
+
+export const openJournalPage = async (pageName: string) => {
+  if (await logseq.Editor.getPage(pageName) as { name: string } | null) // ページが存在するか確認する
+    logseq.App.pushState('page', { name: pageName })//ページが存在する場合は開く
+  else
+    logseq.UI.showMsg(t("Page not found"), "warning", { timeout: 3000 })//ページが存在しない場合は警告を表示する
+}
 
 
 const provideStyleExcludeExceptToday = () =>
