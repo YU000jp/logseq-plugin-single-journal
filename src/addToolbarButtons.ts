@@ -45,11 +45,11 @@ export const addToolbarButtons = () => {
       //昨日の日記ページを開く
       yesterdayJournal: async () => { await openJournalPage(format(subDays(new Date(), 1), getConfigPreferredDateFormat())) },
       //一週間前の日記ページを開く
-      weekBeforeJournal: async () => { await openJournalPage(format(subWeeks(new Date(), 1), getConfigPreferredDateFormat())) },
+      weekBeforeJournal: async () => { await openJournalPage(format(subWeeks(new Date(), 1), getConfigPreferredDateFormat()), true) },
       //一か月前の日記ページを開く
-      monthBeforeJournal: async () => { await openJournalPage(format(subMonths(new Date(), 1), getConfigPreferredDateFormat())) },
+      monthBeforeJournal: async () => { await openJournalPage(format(subMonths(new Date(), 1), getConfigPreferredDateFormat()), true) },
       //一年前の日記ページを開く
-      yearBeforeJournal: async () => { await openJournalPage(format(subYears(new Date(), 1), getConfigPreferredDateFormat())) },
+      yearBeforeJournal: async () => { await openJournalPage(format(subYears(new Date(), 1), getConfigPreferredDateFormat()), true) },
     })
   }
 

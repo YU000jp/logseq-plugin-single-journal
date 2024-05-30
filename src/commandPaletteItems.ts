@@ -14,7 +14,7 @@ export const commandPaletteItems = () => {
         binding: "",
         mode: "non-editing",
       }
-    }, async () => { await openJournalPage(format(subYears(new Date(), 1), getConfigPreferredDateFormat())) })
+    }, async () => { await openJournalPage(format(subYears(new Date(), 1), getConfigPreferredDateFormat()), true) })
     //コマンドパレットに「Month Before Journal」を追加
     logseq.App.registerCommandPalette({
       key: "direct-journal-month-before",
@@ -23,7 +23,7 @@ export const commandPaletteItems = () => {
         binding: "",
         mode: "non-editing",
       }
-    }, async () => { await openJournalPage(format(subMonths(new Date(), 1), getConfigPreferredDateFormat())) })
+    }, async () => { await openJournalPage(format(subMonths(new Date(), 1), getConfigPreferredDateFormat()), true) })
     //コマンドパレットに「Week Before Journal」を追加
     logseq.App.registerCommandPalette({
       key: "direct-journal-week-before",
@@ -32,7 +32,7 @@ export const commandPaletteItems = () => {
         binding: "",
         mode: "non-editing",
       }
-    }, async () => { await openJournalPage(format(subWeeks(new Date(), 1), getConfigPreferredDateFormat())) })
+    }, async () => { await openJournalPage(format(subWeeks(new Date(), 1), getConfigPreferredDateFormat()), true) })
     //コマンドパレットに「Yesterday Journal」を追加
     logseq.App.registerCommandPalette({
       key: "direct-journal-yesterday",

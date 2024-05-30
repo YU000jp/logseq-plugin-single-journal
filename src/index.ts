@@ -97,7 +97,11 @@ const main = async () => {
 }/* end_main */
 
 
-export const openJournalPage = async (pageName: string) => {
+export const openJournalPage = async (pageName: string, checkFlag?: boolean) => {
+  if (!checkFlag) {// 昨日と明日、曜日の場合は、ページが存在しない場合は作成する
+    logseq.App.pushState('page', { name: pageName })
+    return
+  }
   if (await logseq.Editor.getPage(pageName) as { name: string } | null) // ページが存在するか確認する
     logseq.App.pushState('page', { name: pageName })//ページが存在する場合は開く
   else
