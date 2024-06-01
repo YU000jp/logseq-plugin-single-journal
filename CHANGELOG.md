@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.3.0...v1.3.1) (2024-06-01)
+
+
+### Bug Fixes
+
+* **bug:** Cannot be turned off via toggle in plugin settings ([ff99944](https://github.com/YU000jp/logseq-plugin-single-journal/commit/ff99944756274cd7a38f9c9937bef4a3e6e03874))
+
 # [1.3.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.2.0...v1.3.0) (2024-05-30)
 
 
