@@ -55,7 +55,10 @@ const main = async () => {
     if (template !== "/") return
 
     //一時的解除をした場合に再度CSSを適用する
-    if (logseq.settings!.flagExcludeExceptToday as boolean === true) provideStyleExcludeExceptToday()
+    if (logseq.settings!.flagExcludeExceptToday as boolean === true)
+      provideStyleExcludeExceptToday()
+    else 
+      removeProvideStyle(keyCSSExclude)
 
     //日誌を開いたら、今日の日記ページを強制的に開く
     if (logseq.settings!.redirectToToday as boolean === true)
