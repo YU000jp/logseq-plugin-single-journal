@@ -34,8 +34,6 @@ Published 20240103
 - Enable either option and open journals.
   > This plugin only works when you open journals.
 
-> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
-
 ---
 
 ## Showcase / Questions / Ideas / Help
