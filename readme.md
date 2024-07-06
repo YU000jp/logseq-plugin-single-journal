@@ -41,6 +41,12 @@ Published 20240103 <a href="https://www.buymeacoffee.com/yu000japan"><img src="h
 
 > Go to the [Discussions](https://github.com/YU000jp/logseq-plugin-single-journal/discussions) tab to ask and find this kind of things.
 
+1. How to remove buttons: add CSS code to custom.css ![image](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/f4cce013-c947-4e6a-9067-b4895da7d2e7) 🆕
+
+   ```CSS
+   #cancel-exclude {display:none} /* Single journal plugin remove the button */
+   ```
+
 1. This plugin relies on Logseq's DOM (Document Object Model) structure. If the DOM structure changes due to a Logseq version update, styles may not be applied. We will adjust the CSS to deal with it. If you notice something, please raise an issue.
 
 ## Prior art & Credit
