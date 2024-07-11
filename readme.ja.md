@@ -41,6 +41,11 @@
 
 > [ディスカッション](https://github.com/YU000jp/logseq-plugin-single-journal/discussions) タブに移動して、質問やこれらの内容を見つけてください。
 
+1. ボタンを削除する方法: custom.cssにCSSコードを追加する ![image](https://github.com/YU000jp/logseq-plugin-single-journal/assets/111847207/f4cce013-c947-4e6a-9067-b4895da7d2e7) 🆕
+
+   ```CSS
+   #cancel-exclude {display:none} /* Single journal plugin remove the button */
+   ```
 1. このプラグインは Logseq の DOM 構造に依存しています。DOM 構造が Logseq バージョンのアップデートによって変更されると、スタイルが適用されないことがあります。それに気づいた場合は、問題を報告してください。
 
 ## 先行技術とクレジット
