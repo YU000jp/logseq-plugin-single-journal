@@ -1,5 +1,8 @@
 # Logseq プラグイン: Single Journal
 
+> [!WARNING]
+>このプラグインはLogseq dbバージョンでは動作しません。
+
 <div align="right">
 
 [English](https://github.com/YU000jp/logseq-plugin-single-journal) / [日本語](https://github.com/YU000jp/logseq-plugin-single-journal/blob/main/readme.ja.md) [![最新リリースバージョン](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-single-journal)](https://github.com/YU000jp/logseq-plugin-single-journal/releases)
