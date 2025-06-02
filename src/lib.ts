@@ -7,7 +7,7 @@ export const removeProvideStyle = (className: string) => {
     ) as HTMLStyleElement | null
     if (doc) doc.remove()
   }
-export const openPageTodayDiary = async () => {
+export const openPageTodayDiary = async (logseqVersionMd: boolean) => {
   const { preferredDateFormat } = await logseq.App.getUserConfigs() as AppUserConfigs
   logseq.App.pushState('page', { name: format(new Date(), preferredDateFormat) })
 }

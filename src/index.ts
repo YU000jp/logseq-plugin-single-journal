@@ -1,5 +1,5 @@
 import '@logseq/libs' //https://plugins-doc.logseq.com/
-import { LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user'
+import { AppInfo, LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user'
 import { setup as l10nSetup, t } from "logseq-l10n" //https://github.com/sethyuan/logseq-l10n
 import CSSExclude from './exclude.css?inline' // CSS
 import { openPageTodayDiary, removeProvideStyle } from './lib'
@@ -33,9 +33,20 @@ const getUserConfig = async () => {
   const { preferredDateFormat } = await logseq.App.getUserConfigs() as { preferredDateFormat: string }
   configPreferredDateFormat = preferredDateFormat
 }
+let logseqVersion: string = "" //バージョンチェック用
+let logseqVersionMd: boolean = false //バージョンチェック用
 
 /* main */
 const main = async () => {
+
+  // バージョンチェック
+
+  logseqVersionMd = await checkLogseqVersion() // MDモデルだった場合はtrue
+  if (logseqVersionMd === false) {
+    // Logseq ver 0.10.*以下にしか対応していない
+    logseq.UI.showMsg("The Single Journal plugin only supports Logseq ver 0.10.* and below.", "warning", { timeout: 5000 })
+    return
+  }
 
   await l10nSetup({
     builtinTranslations: {//Full translations
@@ -43,7 +54,11 @@ const main = async () => {
     }
   })
 
-  getUserConfig()
+  //100ms待機
+  await new Promise(resolve => setTimeout(resolve, 100))
+
+  //ユーザー設定を取得
+  await getUserConfig()
 
   /* user settings */
   logseq.useSettingsSchema(settingsTemplate())
@@ -56,26 +71,26 @@ const main = async () => {
 
     //一時的解除をした場合に再度CSSを適用する
     if (logseq.settings!.flagExcludeExceptToday as boolean === true)
-      provideStyleExcludeExceptToday()
-    else 
+      provideStyleExcludeExceptToday(logseqVersionMd)
+    else
       removeProvideStyle(keyCSSExclude)
 
     //日誌を開いたら、今日の日記ページを強制的に開く
     if (logseq.settings!.redirectToToday as boolean === true)
-      await openPageTodayDiary()//ページが存在しない場合も作成される
+      await openPageTodayDiary(logseqVersionMd)//ページが存在しない場合も作成される
 
     // 除外を解除するボタンを追加する
     if (logseq.settings!.excludeExceptToday as boolean === true)
-      addCancelExcludeButton()
+      addCancelExcludeButton(logseqVersionMd)
   })
 
   //CSSで除外する場合
   if (logseq.settings!.excludeExceptToday as boolean === true) {
-    provideStyleExcludeExceptToday()
+    provideStyleExcludeExceptToday(logseqVersionMd)
 
     //初回読み込み時 除外を解除するボタンを追加する
     setTimeout(() =>
-      addCancelExcludeButton()
+      addCancelExcludeButton(logseqVersionMd)
       , 2000)
   }
 
@@ -91,7 +106,7 @@ const main = async () => {
   logseq.onSettingsChanged(async (newSet: LSPluginBaseInfo['settings'], oldSet: LSPluginBaseInfo['settings']) => {
     if (oldSet.excludeExceptToday !== newSet.excludeExceptToday) {
       if (newSet.excludeExceptToday as boolean === true)
-        provideStyleExcludeExceptToday()
+        provideStyleExcludeExceptToday(logseqVersionMd)
       else
         removeProvideStyle(keyCSSExclude)
     }
@@ -112,12 +127,16 @@ export const openJournalPage = async (pageName: string, checkFlag?: boolean) => 
 }
 
 
-const provideStyleExcludeExceptToday = () =>
-  logseq.provideStyle({ key: keyCSSExclude, style: CSSExclude })
+const provideStyleExcludeExceptToday = (logseqVersionMd: boolean) => {
+  if (logseqVersionMd === true)
+    logseq.provideStyle({
+      key: keyCSSExclude,
+      style: CSSExclude
+    })
+}
 
-
-const addCancelExcludeButton = () => {
-  if (parent.document.getElementById("cancel-exclude")) return //すでにボタンがある場合は処理しない
+const addCancelExcludeButton = (logseqVersionMd: boolean) => {
+  if (parent.document.getElementById("cancel-exclude") || logseqVersionMd === false) return //すでにボタンがある場合は処理しない
   // 除外を解除するボタンを追加する
   const diaryEle = parent.document.querySelector('body[data-page="home"]>div#root>div>main div#main-content-container div#journals div.journal-item.content') as HTMLDivElement | null
   if (diaryEle) {
@@ -137,6 +156,26 @@ const addCancelExcludeButton = () => {
       logseq.UI.showMsg(t("Temporarily cancel exclusion."), "info", { timeout: 2400 })
     })
   }
+}
+
+
+// MDモデルかどうかのチェック DBモデルはfalse
+const checkLogseqVersion = async (): Promise<boolean> => {
+  const logseqInfo = (await logseq.App.getInfo("version")) as AppInfo | any
+  //  0.11.0もしくは0.11.0-alpha+nightly.20250427のような形式なので、先頭の3つの数値(1桁、2桁、2桁)を正規表現で取得する
+  const version = logseqInfo.match(/(\d+)\.(\d+)\.(\d+)/)
+  if (version) {
+    logseqVersion = version[0] //バージョンを取得
+    // console.log("logseq version: ", logseqVersion)
+
+    // もし バージョンが0.10.*系やそれ以下ならば、logseqVersionMdをtrueにする
+    if (logseqVersion.match(/0\.([0-9]|10)\.\d+/)) {
+      logseqVersionMd = true
+      // console.log("logseq version is 0.10.* or lower")
+      return true
+    } else logseqVersionMd = false
+  } else logseqVersion = "0.0.0"
+  return false
 }
 
 logseq.ready(main).catch(console.error)
