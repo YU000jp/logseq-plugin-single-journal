@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.4.0...v1.5.0) (2025-06-02)
+
+
+### Features
+
+* This plugin does not support the Logseq DB model. Blocked due to bug avoidance. [#12](https://github.com/YU000jp/logseq-plugin-single-journal/issues/12) ([16e0df2](https://github.com/YU000jp/logseq-plugin-single-journal/commit/16e0df24949840e00e80f031a28b45c4efcfb2a6))
+
 # [1.4.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.3.1...v1.4.0) (2025-05-18)
 
 
