@@ -1,7 +1,7 @@
 # Logseq プラグイン: Single Journal
 
 > [!WARNING]
->このプラグインはLogseq dbバージョンでは動作しません。
+> このプラグインは Logseq DB モデルをサポートしていません。 (バグ回避のためブロック)
 
 <div align="right">
 
