@@ -1,7 +1,7 @@
 # Logseq Plugin: Single Journal
 
 > [!WARNING]
-This plugin does not work with Logseq db version.
+This plugin does not support the Logseq DB model. Blocked due to bug avoidance.
 
 <div align="right">
 
