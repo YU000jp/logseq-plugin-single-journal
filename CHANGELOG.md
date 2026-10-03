@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.5.0...v1.5.1) (2026-10-03)
+
+
+### Bug Fixes
+
+* バージョン判定ではなくグラフ種別(API)でファイルグラフを検出する ([6d580de](https://github.com/YU000jp/logseq-plugin-single-journal/commit/6d580deb3e4144ab461d2fc54c8fce46e070fafe))
+
 # [1.5.0](https://github.com/YU000jp/logseq-plugin-single-journal/compare/v1.4.0...v1.5.0) (2025-06-02)
 
 
